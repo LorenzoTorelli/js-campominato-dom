@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container-main {
+    height: 100vh;
+    width: 100vw;
+    background-color: #0d1117;
+    position: relative;
+}
+
+#container-grid {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50% );
+    border: 2px solid white;
+}
+
+
+.square {
+    float: left;
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square-100 {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+
+.square-81 {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+.square-49 {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+
+.click-true {
+    background-color: green;
+}
+.click-false {
+    background-color: red;
+
+}
+
+#button {
+    width: 500px;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+#game-option, #livello {
+    padding: 10px;
+}
+#play {
+    color:white;
+    font-size: 20px;
+}
+
+.loser {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
